@@ -13,22 +13,30 @@
         white-space: nowrap;
       }
     </style>
-    <script src="popup.js"></script>
   </head>
 
   <body>
     <iframe
+      id="youtube-iframe"
       width="420"
       height="345"
-      src="http://www.youtube.com/embed/OvNkaFHSAXY?autoplay=1"
+      src="https://www.youtube.com/embed/OvNkaFHSAXY?autoplay=1"
       frameborder="0"
       allowfullscreen>
     </iframe>
     <div>
       <label for="youtube-id">Youtube ID:
-      <input type="text" name="youtube-id">
-        <button>Play with ID!</button>
+      <input
+        id="youtube-id"
+        type="text"
+        name="youtube-id"
+        value="xp6wD4Jvcbs">
+        <select id="youtube-select">
+        </select>
+        <button id="play-button">Play with ID!</button>
       </label>
     </div>
+
+    <script src="popup.js"></script>
   </body>
 </html>
