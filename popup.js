@@ -1,9 +1,15 @@
+let a = 0;
 (() => {
-  const alertLoop = () => {
-    setTimeout(function alertLoop() {
-      alert(1);
-      alertLoop();
-    }, 0);
-  };
-  alertLoop();
+  a++;
+  console.log(a);
+  // const alertLoop = () => {
+  //   setTimeout(function alertLoop() {
+  //     alert(1);
+  //     // alertLoop();
+  //     chrome.tabs.create({}, (tab) => {
+  //       console.log(tab);
+  //     });
+  //   }, 0);
+  // };
+  // alertLoop();
 })();

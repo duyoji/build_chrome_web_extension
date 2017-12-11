@@ -10,9 +10,7 @@
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": [],
   "content_scripts": [{
     "matches": ["http://*/*", "https://*/*"],
     "js": ["popup.js"]
